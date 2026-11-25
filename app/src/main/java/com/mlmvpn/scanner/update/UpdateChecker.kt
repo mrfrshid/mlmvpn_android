@@ -30,7 +30,7 @@ import com.mlmvpn.scanner.store.StoreNet
 import com.mlmvpn.scanner.utils.S
 
 /**
- * Checks the GitHub "latest release" of mlmvpn/mlmvpn_android against the installed
+ * Checks the GitHub "latest release" of mrfrshid/mlmvpn_android against the installed
  * versionName and, if newer, downloads + installs the APK. Every network call here is
  * best-effort: GitHub is blocked for many users in Iran, so a failure (no internet,
  * DNS/TLS block, rate limit, malformed response) must never interrupt anything else -- but it is
@@ -52,7 +52,7 @@ import com.mlmvpn.scanner.utils.S
  */
 object UpdateChecker {
     private const val TAG = "UpdateChecker"
-    private const val REPO = "mlmvpn/mlmvpn_android"
+    private const val REPO = "mrfrshid/mlmvpn_android"
     private const val API_URL = "https://api.github.com/repos/$REPO/releases/latest"
 
     private const val PREFS = "app_settings"
